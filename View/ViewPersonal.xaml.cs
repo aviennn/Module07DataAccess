@@ -13,4 +13,8 @@ public partial class ViewPersonal : ContentPage
 		var personalViewModel = new PersonalViewModel();
 		BindingContext = personalViewModel;
 	}
+	private async void BackToMain(object sender, EventArgs e)
+	{
+        await Shell.Current.GoToAsync("//MainPage");
+    }
 }
